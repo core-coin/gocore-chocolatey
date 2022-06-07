@@ -1,0 +1,6 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The source binary file is located on Github (https://github.com/core-coin/go-core/releases) and for Windows named "gocore-windows-x86_64.exe".
+You can verify checksum of provided via choco binary file by comparing sha256sum of this file and "gocore-windows-x86_64.exe.checksum" file provided on release page (NOTE: the same verion files).

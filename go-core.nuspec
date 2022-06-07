@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>go-core</id>
+    <version>1.1.4</version>
+    <packageSourceUrl>https://github.com/core-coin/gocore-chocolatey</packageSourceUrl>
+    <title>go-core (Install)</title>
+    <projectUrl>https://coreblockchain.cc/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/go-core.png</iconUrl>-->
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>https://github.com/core-coin/go-core/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <authors>core</authors>
+    <owners>core</owners>
+    <description>Official Golang implementation of the CORE protocol.</description>   
+    <projectSourceUrl>https://github.com/core-coin/go-core</projectSourceUrl>
+    <docsUrl>https://github.com/core-coin/go-core/blob/master/README.md</docsUrl>
+    <dependencies>
+      <dependency id="mingw" version="11.2.0.07112021" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="bin" />
+  </files>
+</package>
