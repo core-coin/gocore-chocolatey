@@ -7,8 +7,6 @@
     <packageSourceUrl>https://github.com/core-coin/gocore-chocolatey</packageSourceUrl>
     <title>go-core (Install)</title>
     <projectUrl>https://coreblockchain.cc/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/go-core.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://github.com/core-coin/go-core/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <authors>core</authors>
@@ -16,6 +14,7 @@
     <description>Official Golang implementation of the CORE protocol.</description>   
     <projectSourceUrl>https://github.com/core-coin/go-core</projectSourceUrl>
     <docsUrl>https://github.com/core-coin/go-core/blob/master/README.md</docsUrl>
+    <tags>Core-coin Go-core Blockchain Crypto</tags>
     <dependencies>
       <dependency id="mingw" version="11.2.0.07112021" />
     </dependencies>
