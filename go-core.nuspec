@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>go-core</id>
-    <version>1.1.4</version>
+    <version>2.2.2</version>
     <packageSourceUrl>https://github.com/core-coin/gocore-chocolatey</packageSourceUrl>
     <title>go-core (Install)</title>
     <projectUrl>https://coreblockchain.cc/</projectUrl>
@@ -11,15 +11,31 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <authors>core</authors>
     <owners>core</owners>
-    <description>Official Golang implementation of the CORE protocol.</description>   
+    <summary>Official Go implementation of the CORE blockchain protocol (gocore CLI).</summary>
+    <description>Official Golang implementation of the CORE protocol.</description>
     <projectSourceUrl>https://github.com/core-coin/go-core</projectSourceUrl>
     <docsUrl>https://github.com/core-coin/go-core/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/core-coin/go-core/issues</bugTrackerUrl>
     <tags>Core-coin Go-core Blockchain Crypto</tags>
+    <releaseNotes>
+v2.2.2 — full upgrade from the previous chocolatey release (1.1.4, May 2022). Covers the entire v2.x line. Per-version detail: https://github.com/core-coin/go-core/releases
+
+Highlights since 1.1.4:
+- Major version 2.0: protocol upgrade (Gocore v2, #441).
+- Trusted checkpoints added for Mainnet and Devin (#449, #463).
+- Smart contract API extensions (#481); `balanceOf` now accepts a feature parameter (#484).
+- JWT authentication support for RPC (#472).
+- RandomY VM updated to a RandomX 1.2.1 baseline (#477).
+- Fix: ed448 signature verification corner case (via go-goldilocks v1.0.16, #470).
+- Fix: graphql address parsing (#475).
+- Fix: devp2p stability (#473, #474).
+- Built with Go 1.21.
+    </releaseNotes>
     <dependencies>
-      <dependency id="mingw" version="11.2.0.07112021" />
+      <dependency id="mingw" version="[11.2.0.07112021]" />
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="bin" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
